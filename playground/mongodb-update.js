@@ -6,7 +6,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, client) => {
   return console.log('Unable to connect to Mongo Server');
   }
   console.log('Connected to MongoDb Server');
-  const db = client.db('TodoApp');
+  const db = client.db('TodoApp')
 
   //findOneAndUpdate
 
