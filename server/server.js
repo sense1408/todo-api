@@ -12,6 +12,7 @@ const {ObjectId} = require('mongodb');
 const {authenticate} = require('./middleware/authenticate');
 
 let app = express();
+console.log('NODE_ENV', process.env.NODE_ENV);
 const port = process.env.PORT;
 
 app.use(bodyParser.json());

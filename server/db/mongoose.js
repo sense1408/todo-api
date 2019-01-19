@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
-console.log(process.env.MONGODB_URI);
-mongoose.connect(process.env.MONGODB_URI,{useNewUrlParser: true });
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/TodoAppTest", {useNewUrlParser: true });
 
 module.exports = {mongoose};
